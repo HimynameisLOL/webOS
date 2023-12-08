@@ -317,13 +317,13 @@ function windows(link, icn, title, browser, os, fullscreen, appName) {
                 // search.innerHTML = `<mark>https://</mark><p>${removeHandeler}</p>`;
                 // console.log(url);
                 if(safeSearch === null) {
-                    if (!isUrl(url)) url = 'https://google.com/search?q=' + url + "&safesearch=0";
+                    if (!isUrl(url)) url = 'https://searx.priv.pw/search?q=' + url + "&safesearch=0";
                 } else if(safeSearch === "ss_0") {
-                    if (!isUrl(url)) url = 'https://google.com/search?q=' + url + "&safesearch=0";
+                    if (!isUrl(url)) url = 'https://searx.priv.pw/search?q=' + url + "&safesearch=0";
                 } else if(safeSearch === "ss_1") {
-                    if (!isUrl(url)) url = 'https://google.com/search?q=' + url + "&safesearch=1";
+                    if (!isUrl(url)) url = 'https://searx.priv.pw/search?q=' + url + "&safesearch=1";
                 } else if(safeSearch === "ss_2") {
-                    if (!isUrl(url)) url = 'https://google.com/search?q=' + url + "&safesearch=2";
+                    if (!isUrl(url)) url = 'https://searx.priv.pw/search?q=' + url + "&safesearch=2";
                 }
                 framew.src = "sw" + "/" + xor.encode(url);
             }
